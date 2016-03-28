@@ -1,0 +1,25 @@
+
+Erstelle in der Datei `search.go` eine Funktion mit der Signatur
+
+func MetaImageSearch(q string, timeout time.Duration) ([]Image, Stats, error)
+
+Diese soll folgende Ergebnisse zurückliefern:
+
+- []Image : eine Liste von Bildern die verschiedene Suchmachinen zum Suchbegriff 'q' gefunden haben
+
+  -> siehe hierzu die Doku zum Scrapercode:
+     go doc . Image
+     go doc ParsePexelsResult, go doc ParsePixabayResult, go doc ParseUnsplashResult
+     go doc PixabayURL, go doc UnsplashURL, go doc PexelsURL
+  -> oder schaue direkt in die Datei scraper.go
+
+- Stats: Statistiken welche Suchmachine wieviel Bilder zurückgeliefert hat
+
+- error: Fehler-Objekt falls ein Fehler aufgetreten ist, nil sonst
+
+Es sollen alle drei Bildersuchmachinen (pixabay, pexels und unsplash) gleichzeitig abgefragt werden. Wird
+das übergebene Timeout überschritten, soll sowohl ein Fehler als auch die bisher eingesammelten Bilder und Stats
+zurückgeliefert werden.
+
+
+
