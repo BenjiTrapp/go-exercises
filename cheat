@@ -11,6 +11,6 @@ then
   exit 1
 fi
 
-git merge --no-ff -m "Fetching solution for exercise ${current_exercise_no}" origin/${current_exercise_no}-solution
+git merge --no-ff -m "Fetching solution for exercise ${current_exercise_no}" origin/${current_exercise_no}-solution --allow-unrelated-histories
 
 echo "Lösung wurde heruntergeladen ... jetzt noch mal ./next ausführen"

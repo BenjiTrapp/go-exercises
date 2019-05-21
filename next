@@ -27,6 +27,6 @@ then
   exit 1
 fi
 
-git merge --no-ff -m "Fetching exercise ${next_exercise_no}" origin/${next_exercise_no}
+git merge --no-ff -m "Fetching exercise ${next_exercise_no}" origin/${next_exercise_no} --allow-unrelated-histories
 
 cat ${next_exercise_no}_instructions.txt
