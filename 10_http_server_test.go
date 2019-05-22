@@ -34,11 +34,11 @@ func ExampleStartHTTPServer() {
 	// <head>
 	//   <meta charset="utf-8">
 	//   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	//   <title>Dashboard</title>
+	//   <title>MetaImageSearch</title>
 	//   <link rel="stylesheet" href="/stylesheets/innoq-bootstrap-theme.css" media="screen" title="no title" charset="utf-8">
 	//   <link rel="stylesheet" href="/stylesheets/color-icons.css" media="screen" title="no title" charset="utf-8">
 	//   <link rel="stylesheet" href="/stylesheets/dragula.css" media="screen" title="no title" charset="utf-8">
-	//   <link rel="stylesheet" href="/stylesheets/dashboard.css" media="screen" title="no title" charset="utf-8">
+	//   <link rel="stylesheet" href="/stylesheets/meta-img-search.css" media="screen" title="no title" charset="utf-8">
 	//   <link rel="stylesheet" href="/stylesheets/checkbox-toggle.css" media="screen" title="no title" charset="utf-8">
 	//   <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
 	// </head>
@@ -89,7 +89,7 @@ func ExampleStartHTTPServer() {
 	//       <ul class="dashboard-list" id="xxxxx">
 	//           {{ range .Images }}
 	//           <li class="dashboard-list-item {{ .Source }}">
-	//             <img style="max-width: 100%; max-height: 100%" src={{ .URL }}/>
+	//             <img style="max-width: 100%; max-height: 100%" src="{{ .URL }}"/>
 	//           </li>
 	//           {{ end }}
 	//       </ul>
